@@ -8,7 +8,7 @@ from datetime import timedelta
 import random
 import time
 import requests
-from streamlit_lottie import st_lottie
+#from streamlit_lottie import st_lottie
 
 
 #--- LOAD MODELS ---
@@ -62,7 +62,7 @@ def load_lottieurl(url):
     return r.json()
 
 #--- LOAD ASSETS ---
-lottie_coding = load_lottieurl("https://assets4.lottiefiles.com/packages/lf20_swnrn2oy.json")
+#lottie_coding = load_lottieurl("https://assets4.lottiefiles.com/packages/lf20_swnrn2oy.json")
 
 def main():
     st.set_page_config(page_title="HDB Smart Parking System", page_icon=":red_car:", layout="wide")
@@ -232,8 +232,8 @@ def main():
 
         st.write('---')
 
-        with right_column:
-            st_lottie(lottie_coding, height=300, key="coding")
+        #with right_column:
+            #st_lottie(lottie_coding, height=300, key="coding")
 
     effectivecharge = totalcharge
 
